@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Platzi travel your perfect guide for your vacations">
+	<meta name="robots" content="index, follow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/tailwind.css">
+	<title>Platzi Travel</title>
+</head>
+<body class="font-Montserrat dark:bg-gray-900 scroll-smooth">
+	<nav id="navbar"
+	class="hidden sm:block,md:block w-full h-16 bg-white py-2 px-6 lg:flex justify-between items-center
+	dark:bg-gray-800
+	">
+		<p
+		class="text-primary text-lg font-bold dark:text-white
+		">
+			Platzi Travel
+		</p>
+
+		<div id="menu">
+			<ul class="flex gap-10">
+				<li>
+					<a
+					href="#recomendations"
+					class="text-primary text-lg font-bold dark:text-white"
+					>
+						Locations
+					</a>
+				</li>
+				<li>
+					<a
+					href="#trending-stays"
+					class="text-primary text-lg font-bold dark:text-white"
+					>
+						Stays
+					</a>
+				</li>
+				<li>
+					<a
+					href="#faqs"
+					class="text-primary text-lg font-bold dark:text-white"
+					>
+						FAQs
+					</a>
+				</li>
+				<li>
+					<a
+					href="#about-us"
+					class="text-primary text-lg font-bold dark:text-white"
+					>
+						About us
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="flex gap-6">
+			<button id="toggle-lg">
+				<img
+				src="./icon/night-mode.png" alt="dark mode icon"
+				class="w-6 h-6"
+				>
+			</button>
+			<img class="h-6 w-6 cursor-pointer" src="./icon/search.png" alt="search icon">
+			<img class="h-6 w-6 cursor-pointer" src="./icon/user.png" alt="account icon">
+		</div>
+	</nav>
+
+	<main id="section-wrapper" class="w-full h-screen">
+		<section id="hero"
+		class="w-full h-4/5 bg-sanFrancisco bg-no-repeat bg-cover p-5 relative md:bg-center md:h-2/5
+		lg:bg-sanFranciscoDesktop lg:h-4/5 lg:grid lg:grid-cols-2
+		">
+			<button id="toggle-sm"
+			class="bg-white p-1 w-14 h-8 rounded-3xl absolute top-5 right-5 lg:hidden
+			">
+				<img class="mx-3 dark-mode" src="../public/icon/night-mode.png" alt="dark mode icon">
+			</button>
+
+			<div
+			class="hidden sm:block,md:block lg:flex flex-col justify-center items-start gap-10 px-20"
+			>
+				<h1
+				class="text-4xl font-bold"
+				>
+					Find More Locations <br> Like This
+				</h1>
+				<button
+				class="w-48 h-12 rounded-3xl font-semibold text-primary bg-white shadow-lg
+				transition duration-500 ease-in-out hover:bg-primary hover:text-white  hover:-translate-y-1
+				hover:scale-110"
+				>
+					Explore More
+				</button>
+			</div>
+
+			 <div class="w-full h-full flex flex-col justify-around items-center lg:hidden">
+				<div id="search"
+				class="bg-white w-72 h-11 rounded-3xl flex items-center justify-between shadow-lg p-5 md:w-96
+				">
+					<img class="w-5 h-5 " src="./icon/search.png" alt="search icon">
+					<input type="search" placeholder="San Francisco"
+					class="border-none text-center rounded-3xl outline-none transition duration-700  ease-in-out
+					focus:whithin:shadow-sm focus:ring-2 focus:w-11/12 hover:scale-90 w-full"
+					>
+				</div>
+
+				<button
+				class="w-48 h-12 rounded-3xl font-semibold text-primary bg-white
+				transition duration-500 ease-in-out hover:bg-primary hover:text-white  hover:-translate-y-1
+				hover:scale-110
+				">
+					Explore More
+				</button>
+			</div>
+		</section>
+
+		<section id="recomendations"
+		class="w-full h-auto my-5 p-5 lg:my-10"
+		>
+			<h2
+			class="text-2xl text-primary mb-4 font-semibold lg:text-4xl dark:text-white
+			">
+				Our Recomendations
+			</h2>
+
+			<article id="recomendations__cards"
+			class="w-full h-52 py-4 overflow-x-auto flex space-x-2 transform transition-transform ease-in-out duration-300
+			overflow-hidden lg:h-96 lg:space-x-6 snap-x snap-center
+			">
+				<div
+				class="shadow-md w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-norway bg-no-repeat bg-cover rounded-t-md"
+					>
+					</div>
+					<div
+					class="p-2 bg-secondary flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3
+					dark:bg-[#374151]
+					">
+						<p
+						class="text-white text-sm font-Montserrat font-bold lg:text-2xl">
+						Norway
+						</p>
+						<p
+						class="text-white text-xs font-Montserrat font-medium lg:text-lg
+						">
+						Beautiful landscapes
+						</p>
+					</div>
+				</div>
+
+				<div
+				class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-new_york bg-no-repeat bg-cover rounded-t-md"
+					>
+					</div>
+					<div class="p-2 flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3
+					dark:bg-[#1F2937]
+					">
+						<p
+						class="text-tertiary text-sm font-Montserrat font-bold lg:text-2xl
+						dark:text-white
+						">
+							New York
+						</p>
+						<p
+						class="text-tertiary text-xs font-Montserrat font-medium lg:text-lg
+						dark:text-white
+						">
+							Concrate jungle
+						</p>
+					</div>
+				</div>
+
+				<div
+				class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-yosemite bg-no-repeat bg-cover rounded-t-md"
+					>
+					</div>
+					<div class="p-2 bg-secondary flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3
+					dark:bg-[#374151]
+					">
+						<p
+						class="text-white text-sm font-Montserrat font-bold lg:text-2xl
+						">
+							Yosemite
+						</p>
+						<p
+						class="text-white text-xs font-Montserrat font-medium lg:text-lg
+						">
+							A brake from the world
+						</p>
+					</div>
+				</div>
+
+				<div
+				class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-seattle bg-no-repeat bg-cover rounded-t-md
+					">
+					</div>
+					<div class="p-2 flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3 dark:bg-[#1F2937]
+					">
+						<p
+						class="text-tertiary text-sm font-Montserrat font-bold lg:text-2xl
+						dark:text-white
+						">
+							Seattle
+						</p>
+						<p
+						class="text-tertiary text-xs font-Montserrat font-medium lg:text-lg
+						dark:text-white
+						">
+							The tech city
+						</p>
+					</div>
+				</div>
+
+				<div
+				class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-switzerland bg-no-repeat bg-cover rounded-t-md"
+					>
+					</div>
+					<div class="p-2 bg-secondary flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3
+					dark:bg-[#374151]
+					">
+						<p
+						class="text-white text-sm font-Montserrat font-bold lg:text-2xl
+						">
+							Switzerland
+						</p>
+						<p
+						class="text-white text-xs font-Montserrat font-medium lg:text-lg
+						">
+							Beautiful landscapes
+						</p>
+					</div>
+				</div>
+
+				<div
+				class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0 transform transition-all
+				hover:-translate-y-4 hover:shadow-xl lg:h-80 lg:w-72 cursor-pointer
+				">
+					<div
+					class="bg-miami bg-no-repeat bg-cover rounded-t-md"
+					>
+					</div>
+					<div class="p-2 flex flex-col gap-2 rounded-b-md lg:p-4 lg:gap-3 dark:bg-[#1F2937]
+					">
+						<p
+						class="text-tertiary text-sm font-Montserrat font-bold lg:text-2xl
+						dark:text-white
+						">
+							Miami
+						</p>
+						<p
+						class="text-tertiary text-xs font-Montserrat font-medium lg:text-lg
+						dark:text-white
+						">
+							Take the sun in the beach
+						</p>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section id="trending-stays"
+		class="w-full h-auto my-5 p-5 grid auto-rows-min gap-4 lg:grid-cols-[400px__520px]
+		lg:grid-rows-[50px_654px_402px_402px] box-border
+		">
+			<h2 id="trending-stays__title"
+			class="text-2xl text-primary mb-4 font-semibold lg:text-4xl lg:col-start-1 lg:col-end-4
+			lg:row-start-1 lg:row-end-2 dark:text-white
+			">
+				Trending Stays
+			</h2>
+
+			<article id="chicago__Card"
+			class="bg-chicago bg-no-repeat bg-cover w-full h-96 rounded-2xl px-5 py-10 md:bg-center
+			lg:col-start-1 lg:col-end-4 lg:row-start-2 lg:row-end-3 lg:h-auto text-end
+			">
+				<h3
+				class="text-2xl text-white font-extrabold mb-4 lg:text-4xl">
+					Chicago
+				</h3>
+				<p class="text-base text-white font-medium lg:text-2xl">
+					2 rooms, bathroom <br> and kitchen.
+				</p>
+			</article>
+
+			<article id="la__card"
+			class="bg-LA bg-no-repeat bg-cover w-full h-96 rounded-2xl px-5 py-10 md:bg-center lg:col-start-1
+			lg:col-end-2 lg:row-start-3 lg:row-end-5 lg:h-auto lg:text-end
+			">
+			<h3
+				class="text-2xl text-white font-extrabold mb-4 lg:text-4xl">
+					Los Angeles
+				</h3>
+				<p class="text-base text-white font-medium lg:text-2xl">
+					4 rooms, 3 bathrooms, <br> kitchen and private <br> pool.
+				</p>
+			</article>
+
+			<article id="miami__card"
+			class="bg-miami bg-no-repeat bg-cover bg-right w-full h-96 rounded-2xl px-5 py-10 md:bg-center
+			lg:row-start-3 lg:row-end-4 lg:col-start-2 lg:col-end-4 lg:h-auto lg:text-end
+			">
+				<h3
+				class="text-2xl text-white font-extrabold mb-4 lg:text-4xl">
+					Miami
+				</h3>
+				<p class="text-base text-white font-medium lg:text-2xl">
+					3 rooms, 2 bathrooms, <br> kitchen and amazing <br> sea view.
+				</p>
+			</article>
+
+			<article id="bali__card"
+			class="bg-bali bg-no-repeat bg-cover w-full h-96 rounded-2xl px-5 py-10 md:bg-center
+			lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5 lg:h-auto lg:text-end
+			">
+				<h3
+				class="text-2xl text-white font-extrabold mb-4 lg:text-4xl">
+					Bali
+				</h3>
+				<p class="text-base text-white font-medium lg:text-2xl">
+					2 rooms, 2 bathrooms, <br> kitchen and private <br> pool.
+				</p>
+			</article>
+		</section>
+
+		<section id="faqs"
+		class="w-full h-auto my-5 p-5 flex flex-col gap-4"
+		>
+			<h2 id="faqs__title"
+			class="text-2xl text-primary mb-4 font-semibold self-start lg:text-4xl dark:text-white
+			">
+				FAQs
+			</h2>
+			<div id="payment-methods">
+				<h3
+				class="text-base text-primary font-semibold lg:text-3xl dark:text-white
+				">
+					Payment Methods
+				</h3>
+				<p
+				class="text-sm font-medium lg:text-2xl dark:text-white
+				">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+				</p>
+			</div>
+
+			<div id="cancellation-policy">
+				<h3
+				class="text-base text-primary font-semibold lg:text-3xl dark:text-white
+				">
+					Canellation Policy
+				</h3>
+				<p
+				class="text-sm font-medium lg:text-xl dark:text-white
+				">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+				</p>
+			</div>
+
+			<div id="long-stays">
+				<h3
+				class="text-base text-primary font-semibold lg:text-3xl dark:text-white
+				">
+					Long Stays
+				</h3>
+				<p
+				class="text-sm font-medium lg:text-xl dark:text-white
+				">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+				</p>
+			</div>
+
+			<div id="terms-conditions">
+				<h3
+				class="text-base text-primary font-semibold lg:text-3xl dark:text-white
+				">
+					Terms and Conditions
+				</h3>
+				<p
+				class="text-sm font-medium lg:text-xl dark:text-white
+				">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+				</p>
+			</div>
+		</section>
+
+		<footer id="about-us"
+		class="w-full h-auto p-5 pb-20 my-5 grid auto-rows-min gap-4 bg-slate-50 lg:pb-5 lg:pl-10 dark:bg-gray-700
+		">
+				<h2
+				class="text-lg font-semibold text-slate-400 lg:text-3xl
+				">
+						About Us
+				</h2>
+				<div class="flex flex-col">
+					<ul>
+						<li>
+							<a href="#"
+							class="text-sm font-medium text-slate-400 lg:text-xl
+							">
+								Investors
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							class="text-sm font-medium text-slate-400 lg:text-xl
+							">
+								Jobs</a>
+						</li>
+						<li>
+							<a href="#"
+							class="text-sm font-medium text-slate-400 lg:text-xl
+							">
+								Privacy policy
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							class="text-sm font-medium text-slate-400 lg:text-xl
+							">
+								Terms and Conditions
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							class="text-sm font-medium text-slate-400 lg:text-xl
+							">
+								Platzi Travel, inc
+							</a>
+						</li>
+						<li>
+							<a href="#"
+							class="text-sm font-semibold text-slate-400 lg:text-3xl
+							">
+								Follow us
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="social-media" class="flex gap-4 lg:gap-10">
+					<img class="h-6 w-6 lg:w-10 lg:h-10 cursor-pointer" src="./icon/twitter.png" alt="X icon">
+					<img class="h-6 w-6 lg:w-10 lg:h-10 cursor-pointer" src="./icon/instagram.png" alt="Instagram Icon">
+				</div>
+		</footer>
+
+		<section id="tab-bar"
+		class="flex justify-around items-center bg-white w-full h-14 fixed bottom-0 left-0
+		lg:hidden dark:bg-gray-800
+		">
+				<a href="#hero">
+					<img class="p-2 w-10 h-10" src="./icon/home.png" alt="Home icon">
+				</a>
+				<a href="#search">
+					<img class="p-2 w-10 h-10" src="./icon/search.png" alt="Search icon">
+				</a>
+				<a href="#trending-stays">
+					<img class="p-2 w-10 h-10" src="./icon/heart.png" alt="Favourites icon">
+				</a>
+				<a href="#">
+					<img class="p-2 w-10 h-10" src="./icon/user.png" alt="account icon">
+				</a>
+		</section>
+	</main>
+	<script src="../src/index.js"></script>
+</body>
+</html>
