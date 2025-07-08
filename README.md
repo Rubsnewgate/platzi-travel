@@ -1,10 +1,6 @@
-# Platzi Travel 👾 🐱‍💻
+# Platzi Travel
 
-------------
-
-#### Project created for the Platzi course: Basic Tailwind Course.
-
-------------
+####  Basic Tailwind Course.
 
 - Project created for the Platzi course: Basic Tailwind Course.
 
@@ -19,4 +15,3 @@
 ------------
 
 - **RubsNewgate**
-

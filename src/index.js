@@ -1,10 +1,10 @@
 const htmlElement = document.querySelector('html');
 const toggleBtnSm = document.querySelector('#toggle-sm');
-const toggleBtnlg = document.querySelector('#toggle-lg');
+const toggleBtnLg = document.querySelector('#toggle-lg');
 
-toggleBtnSm.addEventListener('click', toggleDarkmode);
-toggleBtnlg.addEventListener('click', toggleDarkmode);
+toggleBtnSm.addEventListener('click', toggleDarkMode);
+toggleBtnLg.addEventListener('click', toggleDarkMode);
 
-function toggleDarkmode () {
+function toggleDarkMode () {
     htmlElement.classList.toggle('dark');
 }

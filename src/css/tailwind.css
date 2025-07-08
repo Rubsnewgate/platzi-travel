@@ -1,3 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-Montserrat: Montserrat, sans-serif;
+
+  --color-primary: #cc2d4a;
+  --color-secondary: #8fa206;
+  --color-tertiary: #61aec9;
+
+  --background-image-san-francisco: url('../../public/assets/img/sanFrancisco.jpg');
+  --background-image-san-francisco-desktop: url('../../public/assets/img/sanFranciscoDesktop.jpg');
+  --background-image-yosemite: url('../../public/assets/img/yosemite.jpg');
+  --background-image-LA: url('../../public/assets/img/LA.jpg');
+  --background-image-seattle: url('../../public/assets/img/seattle.jpg');
+  --background-image-new_york: url('../../public/assets/img/new_york.jpg');
+  --background-image-norway: url('../../public/assets/img/norway.jpg');
+  --background-image-sydney: url('../../public/assets/img/sydney.jpg');
+  --background-image-miami: url('../../public/assets/img/miami.jpg');
+  --background-image-switzerland: url('../../public/assets/img/switzerland.jpg');
+  --background-image-bali: url('../../public/assets/img/bali.jpg');
+  --background-image-chicago: url('../../public/assets/img/chicago.jpg');
+  --background-image-europe: url('../../public/assets/img/europe.jpg');
+  --background-image-iceland: url('../../public/assets/img/iceland.jpg');
+}

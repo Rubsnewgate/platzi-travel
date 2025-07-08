@@ -12,9 +12,10 @@
 	<!-- Title -->
 	<title> Platzi Travel </title>
 	<!-- Styles -->
-	<link rel="stylesheet" href="./css/tailwind.css">
+	<link rel="stylesheet" href="./css/output.css">
 </head>
 <body class="font-Montserrat dark:bg-gray-900 scroll-smooth">
+	<!-- Navbar visible only in desktop  -->
 	<nav id="navbar" class="hidden sm:block,md:block w-full h-16 bg-white py-2 px-6
 		lg:flex justify-between items-center dark:bg-gray-800"
 	>
@@ -52,27 +53,29 @@
 		</div>
 
 		<div class="flex gap-6">
-			<button id="toggle-lg">
-				<img src="./icon/night-mode.png" alt="dark mode icon" class="w-6 h-6">
+			<button id="toggle-lg" class="cursor-pointer">
+				<img src="./assets/icon/night-mode.png" alt="dark mode icon" class="w-6 h-6">
 			</button>
 
-			<img src="./icon/search.png" alt="search icon" class="h-6 w-6 cursor-pointer">
-			<img src="./icon/user.png" alt="account icon" class="h-6 w-6 cursor-pointer">
+			<img src="./assets/icon/search.png" alt="search icon" class="h-6 w-6 cursor-pointer">
+			<img src="./assets/icon/user.png" alt="account icon" class="h-6 w-6 cursor-pointer">
 		</div>
 	</nav>
 
 	<main id="section-wrapper" class="w-full h-screen">
-		<section id="hero" class="w-full h-4/5 bg-sanFrancisco bg-no-repeat bg-cover
-			p-5 relative md:bg-center md:h-2/5 lg:bg-sanFranciscoDesktop lg:h-4/5
+		<section id="hero" class="w-full h-4/5 bg-san-francisco bg-no-repeat bg-cover
+			p-5 relative md:bg-center md:h-2/5 lg:bg-san-francisco-desktop lg:h-4/5
 			lg:grid lg:grid-cols-2"
 		>
+			<!-- Button visible only in mobile screens -->
 			<button id="toggle-sm" class="bg-white p-1 w-14 h-8 rounded-3xl
 				absolute top-5 right-5 lg:hidden">
-				<img src="../public/icon/night-mode.png" alt="dark mode icon"
+				<img src="../public/assets/icon/night-mode.png" alt="dark mode icon"
 					class="mx-3 dark-mode"
 				>
 			</button>
 
+			<!-- Presentation visible only in desktop -->
 			<div class="hidden sm:block,md:block lg:flex flex-col justify-center
 				items-start gap-10 px-20"
 			>
@@ -81,22 +84,23 @@
 				</h1>
 
 				<button class="w-48 h-12 rounded-3xl font-semibold text-primary
-					bg-white shadow-lg transition duration-500 ease-in-out
+					bg-white shadow-lg transition duration-600 ease-in-out
 					hover:bg-primary hover:text-white  hover:-translate-y-1
-					hover:scale-110"
+					hover:scale-110 cursor-pointer"
 				>
 					Explore More
 				</button>
 			</div>
 
+			<!-- Search visible only in mobile screens -->
 			 <div class="w-full h-full flex flex-col justify-around items-center lg:hidden">
 				<div id="search" class="bg-white w-72 h-11 rounded-3xl flex
 					items-center justify-between shadow-lg p-5 md:w-96"
 				>
-					<img class="w-5 h-5 " src="./icon/search.png" alt="search icon">
+					<img class="w-5 h-5 " src="./assets/icon/search.png" alt="search icon">
 
 					<input type="search" placeholder="San Francisco" class="border-none
-						text-center rounded-3xl outline-none transition duration-700
+						text-center rounded-3xl outline-hidden transition duration-700
 						ease-in-out focus:whithin:shadow-sm focus:ring-2 focus:w-11/12
 						hover:scale-90 w-full"
 					>
@@ -122,7 +126,7 @@
 				flex space-x-2 transform transition-transform ease-in-out duration-300
 				overflow-hidden lg:h-96 lg:space-x-6 snap-x snap-center"
 			>
-				<div class="shadow-md w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-md w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -140,7 +144,7 @@
 					</div>
 				</div>
 
-				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -162,7 +166,7 @@
 					</div>
 				</div>
 
-				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -180,7 +184,7 @@
 					</div>
 				</div>
 
-				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -202,7 +206,7 @@
 					</div>
 				</div>
 
-				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -220,7 +224,7 @@
 					</div>
 				</div>
 
-				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl flex-shrink-0
+				<div class="shadow-lg w-36 h-44 grid grid-rows-2 rounded-xl shrink-0
 					transform transition-all hover:-translate-y-4 hover:shadow-xl lg:h-80
 					lg:w-72 cursor-pointer"
 				>
@@ -257,7 +261,7 @@
 
 			<article id="chicago__Card" class="bg-chicago bg-no-repeat bg-cover w-full
 				h-96 rounded-2xl px-5 py-10 md:bg-center lg:col-start-1 lg:col-end-4
-				lg:row-start-2 lg:row-end-3 lg:h-auto text-end"
+				lg:row-start-2 lg:row-end-3 lg:h-auto lg:text-end"
 			>
 				<h3 class="text-2xl text-white font-extrabold mb-4 lg:text-4xl">
 					Chicago
@@ -411,10 +415,10 @@
 			</div>
 
 			<div id="social-media" class="flex gap-4 lg:gap-10">
-				<img src="./icon/twitter.png" alt="X icon" class="h-6 w-6 lg:w-10
+				<img src="./assets/icon/twitter.png" alt="X icon" class="h-6 w-6 lg:w-10
 					lg:h-10 cursor-pointer"
 				>
-				<img src="./icon/instagram.png" alt="Instagram Icon" class="h-6 w-6
+				<img src="./assets/icon/instagram.png" alt="Instagram Icon" class="h-6 w-6
 					lg:w-10 lg:h-10 cursor-pointer"
 				>
 			</div>
@@ -424,16 +428,16 @@
 			w-full h-14 fixed bottom-0 left-0 lg:hidden dark:bg-gray-800"
 		>
 			<a href="#hero">
-				<img src="./icon/home.png" alt="Home icon" class="p-2 w-10 h-10" >
+				<img src="./assets/icon/home.png" alt="Home icon" class="p-2 w-10 h-10" >
 			</a>
 			<a href="#search">
-				<img src="./icon/search.png" alt="Search icon" class="p-2 w-10 h-10">
+				<img src="./assets/icon/search.png" alt="Search icon" class="p-2 w-10 h-10">
 			</a>
 			<a href="#trending-stays">
-				<img src="./icon/heart.png" alt="Favorites icon" class="p-2 w-10 h-10">
+				<img src="./assets/icon/heart.png" alt="Favorites icon" class="p-2 w-10 h-10">
 			</a>
 			<a href="#">
-				<img src="./icon/user.png" alt="Account icon" class="p-2 w-10 h-10">
+				<img src="./assets/icon/user.png" alt="Account icon" class="p-2 w-10 h-10">
 			</a>
 		</section>
 	</main>
